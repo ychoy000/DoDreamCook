@@ -13,9 +13,21 @@ header {
     background-size: cover;
     background-position: center top;
 }
+
+/* 서비스영역 */
+.card-hover:hover {
+  cursor: pointer;
+  background: beige;
+}
 #sns-links {
     background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(../images/sns-bg.jpg);
     background-position: center;
+  }
+  #news {
+  background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url(../images/news-bg.jpg);
+  background-size: cover;
+  background-position: center;
+
 }
 @media (min-width: 768px){
   .sns2{width: 50%;}
