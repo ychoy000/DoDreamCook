@@ -9,12 +9,69 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="navbarSupportedContent">
+<!-- navigation 시작 -->
+<nav class="navbar navbar-dark navbar-expand-md navbar-light bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand gugi-font" href="#home"><img src="./images/logo.png" alt="logo">두드림 Cook</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto my-2">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">홈</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-chef">세프소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">포트폴리오</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">서비스</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog">블로그</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">연락처</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- navigation 끝 -->
+
+    <!-- 헤더 영역 시작 -->
     <header id="home" class="vh-100 text-white d-flex flex-column justify-content-center align-items-center">
         <h1 class="display-3 fw-bold mb-5">두드림 ART Cook</h1>
         <h4 class="fs-2 mb-3">요리와 아트의 만남</h4>
         <p class="lead mb-5">아름다운 한 끼로 삶의 색체를 더하다</p>
-        <button type="button" class="btn btn-outline-warning rounded-pill">대표 요리 보기</button>
+        
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  대표 요리 보기
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ART Cook 대표 요리</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/bestmenu.jpg" alt="best_menu" class="img-fluid">
+        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi natus voluptatibus reiciendis accusamus delectus id repudiandae aliquam libero itaque, cupiditate minus officia est magnam at commodi recusandae rem voluptas veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia atque labore dicta voluptatibus, ex culpa laudantium? Odio quia aspernatur error distinctio eos quod tenetur voluptates, rem nesciunt enim, expedita doloremque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nam, facere quos molestiae sequi nobis dolore quaerat vero pariatur consequatur.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     </header>
     <!-- 헤더 영역 끝 -->
     <!-- 쉐프 소개 섹션 시작 -->
@@ -190,15 +247,15 @@
                 </div>
                 <div class="col-lg-3">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">뉴스보기
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsModal">뉴스보기
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Art Cook News</h1>
+                        <h1 class="modal-title fs-5" id="newsModalLabel">Art Cook News</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
             <div class="modal-body">
@@ -216,7 +273,7 @@
     <!-- 뉴스 섹션 끝 -->
 
     <!-- 연락처 섹션 작작 -->
-    <section class="container-md py-2">
+    <section id="contact" class="container-md py-2">
         <div class="text-center mt-4">
             <h2 class="fw-bold">Contact</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>

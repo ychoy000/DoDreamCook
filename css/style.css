@@ -4,10 +4,13 @@
 body {
   font-family: "Noto Sans", sans-serif;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .gugi-font {
   font-family: "Gugi", sans-serif;
 }
-
+/* 네비게이션 영역 */
+.nav-link:hover, .nav-link.active {
+  color: #ffc107 !important;
+}
 header {
     background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(../images/main-bg.jpg);
     background-size: cover;
